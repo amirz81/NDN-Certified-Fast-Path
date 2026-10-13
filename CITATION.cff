@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Certified Bank-Aware Fast-Path Coverage for Hardware-Constrained NDN Forwarding Lookup"
+message: "If you use this software, please cite the associated preprint."
+type: software
+authors:
+  - given-names: Amirreza
+    family-names: Khorasanian
+    email: akh5793@gmail.com
+date-released: 2026-08-27
+repository-code: "https://github.com/amirz81/NDN-Certified-Fast-Path"

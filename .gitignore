@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+.DS_Store
+Thumbs.db
+
+# Generated/local experiment outputs
+run_outputs/
+*.log
+
+# Large local trace material; obtain/rebuild from the public dataset.
+data/real_interests_multi.csv
