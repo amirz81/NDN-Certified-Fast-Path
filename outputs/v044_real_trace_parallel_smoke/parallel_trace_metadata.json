@@ -1,0 +1,35 @@
+{
+  "configs_total": 8,
+  "workers": 4,
+  "algorithms": [
+    "BankRepairOnly",
+    "BPC-Repair",
+    "BPC-Portfolio"
+  ],
+  "regimes": [
+    "fixed_per_bank",
+    "fixed_total"
+  ],
+  "B_values": [
+    1,
+    2
+  ],
+  "budgets": [
+    16,
+    32
+  ],
+  "gammas": [
+    1.0
+  ],
+  "args": {
+    "interests": "data\\real_interests_multi.csv",
+    "fib": "data\\real_fib_multi_pruned.csv",
+    "limit": null,
+    "max_interests_sample": 10000,
+    "sample_seed": 1,
+    "derive_fib_depth": 3,
+    "min_fib_count": 2,
+    "D": 8,
+    "capacity_frac": 0.35
+  }
+}

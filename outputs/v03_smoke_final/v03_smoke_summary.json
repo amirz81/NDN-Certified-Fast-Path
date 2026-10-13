@@ -1,0 +1,8 @@
+{
+  "trace_size": 1200,
+  "fib_prefixes": 48,
+  "trie_nodes": 218,
+  "max_parser_coverage": 1.0,
+  "best_certificate_coverage": 0.9158333333333334,
+  "best_bank_feasible_coverage": 0.7333333333333333
+}

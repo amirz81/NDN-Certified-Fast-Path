@@ -1,0 +1,305 @@
+{
+  "elapsed_total_s": 22124.527252674103,
+  "metadata": {
+    "configs_total": 18,
+    "workers": 6,
+    "algorithms": [
+      "BankRepairOnly",
+      "BPC-Repair",
+      "BPC-Portfolio"
+    ],
+    "regimes": [
+      "fixed_per_bank",
+      "fixed_total"
+    ],
+    "B_values": [
+      1,
+      2,
+      4
+    ],
+    "budgets": [
+      16,
+      32,
+      48
+    ],
+    "gammas": [
+      1.0
+    ],
+    "args": {
+      "interests": "data\\real_interests_multi.csv",
+      "fib": "data\\real_fib_multi_pruned.csv",
+      "limit": null,
+      "max_interests_sample": 50000,
+      "sample_seed": 1,
+      "derive_fib_depth": 3,
+      "min_fib_count": 2,
+      "D": 8,
+      "capacity_frac": 0.35
+    }
+  },
+  "worker_metas": [
+    {
+      "worker_id": 0,
+      "loaded_interests": 50000,
+      "usable_interests_with_lpm": 49961,
+      "fib_prefixes": 143,
+      "trie_nodes": 14976,
+      "total_load": 49961.0,
+      "configs": 3,
+      "elapsed_s": 15298.640790462494
+    },
+    {
+      "worker_id": 3,
+      "loaded_interests": 50000,
+      "usable_interests_with_lpm": 49961,
+      "fib_prefixes": 143,
+      "trie_nodes": 14976,
+      "total_load": 49961.0,
+      "configs": 3,
+      "elapsed_s": 15424.066763401031
+    },
+    {
+      "worker_id": 4,
+      "loaded_interests": 50000,
+      "usable_interests_with_lpm": 49961,
+      "fib_prefixes": 143,
+      "trie_nodes": 14976,
+      "total_load": 49961.0,
+      "configs": 3,
+      "elapsed_s": 18829.8484518528
+    },
+    {
+      "worker_id": 1,
+      "loaded_interests": 50000,
+      "usable_interests_with_lpm": 49961,
+      "fib_prefixes": 143,
+      "trie_nodes": 14976,
+      "total_load": 49961.0,
+      "configs": 3,
+      "elapsed_s": 18848.42017841339
+    },
+    {
+      "worker_id": 5,
+      "loaded_interests": 50000,
+      "usable_interests_with_lpm": 49961,
+      "fib_prefixes": 143,
+      "trie_nodes": 14976,
+      "total_load": 49961.0,
+      "configs": 3,
+      "elapsed_s": 22024.92168521881
+    },
+    {
+      "worker_id": 2,
+      "loaded_interests": 50000,
+      "usable_interests_with_lpm": 49961,
+      "fib_prefixes": 143,
+      "trie_nodes": 14976,
+      "total_load": 49961.0,
+      "configs": 3,
+      "elapsed_s": 22122.34637737274
+    }
+  ],
+  "best_rows": [
+    {
+      "regime": "fixed_per_bank",
+      "B": 1,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2103.811278820038
+    },
+    {
+      "regime": "fixed_per_bank",
+      "B": 1,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 1868.8948559761047
+    },
+    {
+      "regime": "fixed_per_bank",
+      "B": 2,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 1984.2014906406403
+    },
+    {
+      "regime": "fixed_per_bank",
+      "B": 2,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2203.2145771980286
+    },
+    {
+      "regime": "fixed_per_bank",
+      "B": 4,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.5852965312944096,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2371.7948224544525
+    },
+    {
+      "regime": "fixed_per_bank",
+      "B": 4,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.5852965312944096,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2425.651153087616
+    },
+    {
+      "regime": "fixed_total",
+      "B": 2,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2126.735597372055
+    },
+    {
+      "regime": "fixed_total",
+      "B": 2,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2026.0633330345154
+    },
+    {
+      "regime": "fixed_total",
+      "B": 4,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.5852965312944096,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2092.7517278194427
+    },
+    {
+      "regime": "fixed_total",
+      "B": 4,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.5852965312944096,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2226.8491044044495
+    },
+    {
+      "regime": "fixed_total",
+      "B": 1,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2215.393453836441
+    },
+    {
+      "regime": "fixed_total",
+      "B": 1,
+      "total_budget": 48,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.6406396989651929,
+      "mean_certificate_gain": 0.587358139348692,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 32.0,
+      "mean_prefix_nodes": 16.0,
+      "mean_runtime_s": 2317.8134775161743
+    },
+    {
+      "regime": "fixed_total",
+      "B": 2,
+      "total_budget": 32,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.5526110366085547,
+      "mean_certificate_gain": 0.528932567402574,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 24.0,
+      "mean_prefix_nodes": 8.0,
+      "mean_runtime_s": 1437.7195057868958
+    },
+    {
+      "regime": "fixed_total",
+      "B": 2,
+      "total_budget": 32,
+      "gamma": 1.0,
+      "algorithm": "BPC-Repair",
+      "mean_certified_coverage": 0.5526110366085547,
+      "mean_certificate_gain": 0.528932567402574,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 24.0,
+      "mean_prefix_nodes": 8.0,
+      "mean_runtime_s": 1404.1978335380554
+    },
+    {
+      "regime": "fixed_per_bank",
+      "B": 2,
+      "total_budget": 32,
+      "gamma": 1.0,
+      "algorithm": "BPC-Portfolio",
+      "mean_certified_coverage": 0.5526110366085547,
+      "mean_certificate_gain": 0.528932567402574,
+      "feasible_rate": 1.0,
+      "mean_cert_budget": 24.0,
+      "mean_prefix_nodes": 8.0,
+      "mean_runtime_s": 1225.1358501911163
+    }
+  ],
+  "portfolio_source_totals": [
+    {
+      "source": "BPC-Repair",
+      "count": 18
+    }
+  ]
+}

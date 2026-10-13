@@ -1,0 +1,12 @@
+prefix,action
+/svc0/topic,svc0
+/svc0/topic/sub0,svc0
+/svc0/topic/sub1,svc0
+/svc0/topic/sub2,svc0-alt
+/svc1/topic,svc1
+/svc1/topic/sub0,svc1
+/svc1/topic/sub1,svc1
+/svc1/topic/sub2,svc1-alt
+/svc2/topic,svc2
+/svc2/topic/sub0,svc2
+/svc2/topic/sub1,svc2
